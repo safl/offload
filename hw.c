@@ -5,6 +5,18 @@
 #include <stdio.h>
 #include <math.h>
 
+#if defined(_WIN32) || defined(_WIN64)
+#include <sys/timeb.h>
+#define gettime(a) _ftime(a)
+#define usec(t1,t2) ((((t2).time-(t1).time)*1000+((t2).millitm-(t1).millitm))*100)
+typedef struct _timeb timestruct;
+#else
+#include <sys/time.h>
+#define gettime(a) gettimeofday(a,NULL)
+#define usec(t1,t2) (((t2).tv_sec-(t1).tv_sec)*1000000+((t2).tv_usec-(t1).tv_usec))
+typedef struct timeval timestruct;
+#endif
+
 #define acc_num_device_types 10
 
 char* acc_device_type_text(acc_device_t device_type) {
@@ -58,25 +70,50 @@ void acc_pprint_available_devices(void)
 
 int main( int argc, char* argv[]) {
 
-    acc_pprint_available_devices();
-    acc_init(acc_device_nvidia);
-    acc_set_device_type(acc_device_nvidia);
+    int nelem = 100000;
+    int iterations = 50000;
+    int offload = 1;
+    //int offload = 0;
 
-    int nelem = 100;
+    acc_pprint_available_devices();
+
+    if (offload) {
+        acc_init(acc_device_nvidia);
+        acc_set_device_type(acc_device_nvidia);
+    }
+
     double* restrict a = (double*)mmap(0, nelem*sizeof(double), PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0);
     double* restrict b = (double*)mmap(0, nelem*sizeof(double), PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0);
     double* restrict c = (double*)mmap(0, nelem*sizeof(double), PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0);
 
-    acc_create(a, nelem);
-    acc_create(b, nelem);
-    acc_create(c, nelem);
-
-    #pragma acc parallel loop present(a, b, c)
+    #pragma omp parallel for
     for(int i=0; i<nelem; ++i) {
-        a[i] = b[i] + c[i];
+        a[i] = i;
+        b[i] = i;
     }
+    
+    timestruct timer_started, timer_stopped;
 
-    acc_shutdown(acc_device_nvidia);
+    if (offload) {
+        acc_copyin(a, nelem*sizeof(double));
+        acc_copyin(b, nelem*sizeof(double));
+        acc_copyin(c, nelem*sizeof(double));
+    }
+    gettime( &timer_started );
+    for(int iteration=0; iteration<iterations; ++iteration) {
+        #pragma acc parallel loop present(a, b, c) if(offload)
+        for(int i=0; i<nelem; ++i) {
+            c[i] = a[i] + b[i];
+        }
+    }
+    if (offload) {
+        acc_copyout(c, nelem*sizeof(double));
+        acc_shutdown(acc_device_nvidia);
+    }
+    gettime( &timer_stopped );
+    long long elapsed = usec(timer_started, timer_stopped);
+
+    printf("HEj %f elapsed %ld\n", c[nelem/2], elapsed);
 
     return 0; 
 }
