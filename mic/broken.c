@@ -118,9 +118,9 @@ void mic_pull_free(double* data, size_t nelem, int device, int offload)
 
 int main (int argc, char **argv)
 {
-    int device = 0;                             // The mic deice
+    int device = 0;                             // The mic device id
     int iter = 3;
-    int nelem = 50000000;                       // number of elements in the arrays
+    int nelem = 50000000;                       // Number of elements in the arrays
     int offload = argc > 1 ? atoi(argv[1]) : 1; // Control offloading
 
     void* handle;
@@ -136,19 +136,19 @@ int main (int argc, char **argv)
     double* c = (double*)mmap(0, nelem*sizeof(double), PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0);
     
     printf("Initializing on host...\n");
-    for(int i=0; i<nelem; ++i) {                // Initialize it
+    for(int i=0; i<nelem; ++i) {                // Initialize data on host
         a[i] = i;
         b[i] = i;
-        c[i] = i;
+        //c[i] = i;
     }
 
     printf("Allocating on device...\n");
-    mic_alloc(a, nelem, device, offload);       // Allocate buffers on device
+    mic_alloc(a, nelem, device, offload);       // Allocate data on device
     mic_alloc(b, nelem, device, offload);
     mic_alloc(c, nelem, device, offload);
 
     printf("Copying to device...\n");
-    mic_push(a, nelem, device, offload);        // Copy input-buffers to device
+    mic_push(a, nelem, device, offload);        // Copy input-data to device
     mic_push(a, nelem, device, offload);
 
     printf("Doing some work on device...\n");
@@ -157,6 +157,8 @@ int main (int argc, char **argv)
     }
     
     printf("Retrieving data from and deallocating data on device...\n");
+    mic_free(a, nelem, device, offload);        // Deallocate on device
+    mic_free(b, nelem, device, offload);        // Deallocate on device
     mic_pull_free(c, nelem, device, offload);   // Copy result back and free on device
 
     printf("Bla bla...\n");
