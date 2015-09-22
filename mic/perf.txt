@@ -5,19 +5,19 @@ Initializing device(0)... offload(1)?
 [Offload] [MIC 0] [Line]                    69
 [Offload] [MIC 0] [Tag]                     Tag 0
 [Offload] [HOST]  [Tag 0] [State]           Start target
-[Offload] [HOST]  [Tag 0] [State]           Setup target entry: __offload_entry_broken_c_69mic_get_max_threadsicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 0] [State]           Setup target entry: __offload_entry_broken_c_69mic_get_max_threadsicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 0] [Signal]          signal : none
 [Offload] [HOST]  [Tag 0] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 0] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 0] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 0] [State]           Execute task on target
 [Offload] [HOST]  [Tag 0] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 0] [State]           Start target entry: __offload_entry_broken_c_69mic_get_max_threadsicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 0] [State]           Start target entry: __offload_entry_broken_c_69mic_get_max_threadsicc0101964010590k8azMm
 [Offload] [MIC 0] [Tag 0] [Var]             mthreads  OUT
 [Offload] [MIC 0] [Tag 0] [State]           Target->host copyout data   4
-[Offload] [HOST]  [Tag 0] [CPU Time]        0.498360(seconds)
+[Offload] [HOST]  [Tag 0] [CPU Time]        0.585384(seconds)
 [Offload] [MIC 0] [Tag 0] [CPU->MIC Data]   0 (bytes)
-[Offload] [MIC 0] [Tag 0] [MIC Time]        0.032039(seconds)
+[Offload] [MIC 0] [Tag 0] [MIC Time]        0.031317(seconds)
 [Offload] [MIC 0] [Tag 0] [MIC->CPU Data]   4 (bytes)
 
 Allocating on host...
@@ -27,50 +27,50 @@ Allocating on device...
 [Offload] [MIC 0] [Line]                    81
 [Offload] [MIC 0] [Tag]                     Tag 1
 [Offload] [HOST]  [Tag 1] [State]           Start target
-[Offload] [HOST]  [Tag 1] [State]           Setup target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 1] [State]           Setup target entry: __offload_entry_broken_c_81mic_allocicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 1] [Signal]          signal : none
 [Offload] [HOST]  [Tag 1] [Signal]          waits  : none
-[Offload] [HOST]  [Tag 1] [State]           Gather copyin data: base=0x7f27cc287000 length=400000000
+[Offload] [HOST]  [Tag 1] [State]           Gather copyin data: base=0x7f4d5c287000 length=400000000
 [Offload] [HOST]  [Tag 1] [State]           Create target buffer: size=400000000 offset=0
 [Offload] [HOST]  [Tag 1] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 1] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 1] [State]           Execute task on target
 [Offload] [HOST]  [Tag 1] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 1] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 1] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0101964010590k8azMm
 [Offload] [MIC 0] [Tag 1] [Var]             data_1064_V$15  NOCOPY
-[Offload] [MIC 0] [Tag 1] [State]           Target->host copyout data   0
-[Offload] [HOST]  [Tag 1] [CPU Time]        1.273670(seconds)
+[Offload] [HOST]  [Tag 1] [CPU Time]        1.262718(seconds)
 [Offload] [MIC 0] [Tag 1] [CPU->MIC Data]   0 (bytes)
-[Offload] [MIC 0] [Tag 1] [MIC Time]        0.000227(seconds)
+[Offload] [MIC 0] [Tag 1] [MIC Time]        0.000225(seconds)
 [Offload] [MIC 0] [Tag 1] [MIC->CPU Data]   0 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    81
 [Offload] [MIC 0] [Tag]                     Tag 2
 [Offload] [HOST]  [Tag 2] [State]           Start target
-[Offload] [HOST]  [Tag 2] [State]           Setup target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 1] [State]           Target->host copyout data   0
+entry_broken_c_81mic_allocicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 2] [Signal]          signal : none
 [Offload] [HOST]  [Tag 2] [Signal]          waits  : none
-[Offload] [HOST]  [Tag 2] [State]           Gather copyin data: base=0x7f27b450e000 length=400000000
+[Offload] [HOST]  [Tag 2] [State]           Gather copyin data: base=0x7f4d4450e000 length=400000000
 [Offload] [HOST]  [Tag 2] [State]           Create target buffer: size=400000000 offset=0
 [Offload] [HOST]  [Tag 2] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 2] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 2] [State]           Execute task on target
 [Offload] [HOST]  [Tag 2] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 2] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
-[Offload] [HOST]  [Tag 2] [CPU Time]        1.283028(seconds)
+[Offload] [MIC 0] [Tag 2] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0101964010590k8azMm
+[Offload] [HOST]  [Tag 2] [CPU Time]        1.278702(seconds)
 [Offload] [MIC 0] [Tag 2] [CPU->MIC Data]   0 (bytes)
-[Offload] [MIC 0] [Tag 2] [MIC Time]        0.000108(seconds)
+[Offload] [MIC 0] [Tag 2] [MIC Time]        0.000104(seconds)
 [Offload] [MIC 0] [Tag 2] [MIC->CPU Data]   0 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    81
 [Offload] [MIC 0] [Tag]                     Tag 3
 [Offload] [HOST]  [Tag 3] [State]           Start target
-[Offload] [HOST]  [Tag 3] [State]           Setup target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 3] [State]           Setup target entry: __offload_entry_broken_c_81mic_allocicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 3] [Signal]          signal : none
 [Offload] [HOST]  [Tag 3] [Signal]          waits  : none
-[Offload] [HOST]  [Tag 3] [State]           Gather copyin data: base=0x7f279c795000 length=400000000
+[Offload] [HOST]  [Tag 3] [State]           Gather copyin data: base=0x7f4d2c795000 length=400000000
 [Offload] [MIC 0] [Tag 2] [Var]             data_1064_V$15  NOCOPY
 [Offload] [MIC 0] [Tag 2] [State]           Target->host copyout data   0
 [Offload] [HOST]  [Tag 3] [State]           Create target buffer: size=400000000 offset=0
@@ -78,10 +78,10 @@ Allocating on device...
 [Offload] [HOST]  [Tag 3] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 3] [State]           Execute task on target
 [Offload] [HOST]  [Tag 3] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 3] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0102107354926DnRxsH
-[Offload] [HOST]  [Tag 3] [CPU Time]        1.385024(seconds)
+[Offload] [MIC 0] [Tag 3] [State]           Start target entry: __offload_entry_broken_c_81mic_allocicc0101964010590k8azMm
+[Offload] [HOST]  [Tag 3] [CPU Time]        1.370623(seconds)
 [Offload] [MIC 0] [Tag 3] [CPU->MIC Data]   0 (bytes)
-[Offload] [MIC 0] [Tag 3] [MIC Time]        0.000108(seconds)
+[Offload] [MIC 0] [Tag 3] [MIC Time]        0.000107(seconds)
 [Offload] [MIC 0] [Tag 3] [MIC->CPU Data]   0 (bytes)
 
 Copying to device...
@@ -89,7 +89,7 @@ Copying to device...
 [Offload] [MIC 0] [Line]                    89
 [Offload] [MIC 0] [Tag]                     Tag 4
 [Offload] [HOST]  [Tag 4] [State]           Start target
-[Offload] [HOST]  [Tag 4] [State]           Setup target entry: __offload_entry_broken_c_89mic_pushicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 4] [State]           Setup target entry: __offload_entry_broken_c_89mic_pushicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 4] [Signal]          signal : none
 [Offload] [HOST]  [Tag 4] [Signal]          waits  : none
 [Offload] [MIC 0] [Tag 3] [Var]             data_1064_V$15  NOCOPY
@@ -97,7 +97,7 @@ Copying to device...
 [Offload] [HOST]  [Tag 4] [State]           Host->target pointer data 400000000
 [Offload] [HOST]  [Tag 4] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 4] [State]           Target->host pointer data 0
-[Offload] [HOST]  [Tag 4] [CPU Time]        0.072744(seconds)
+[Offload] [HOST]  [Tag 4] [CPU Time]        0.071318(seconds)
 [Offload] [MIC 0] [Tag 4] [CPU->MIC Data]   400000000 (bytes)
 [Offload] [MIC 0] [Tag 4] [MIC Time]        0.000000(seconds)
 [Offload] [MIC 0] [Tag 4] [MIC->CPU Data]   0 (bytes)
@@ -106,13 +106,13 @@ Copying to device...
 [Offload] [MIC 0] [Line]                    89
 [Offload] [MIC 0] [Tag]                     Tag 5
 [Offload] [HOST]  [Tag 5] [State]           Start target
-[Offload] [HOST]  [Tag 5] [State]           Setup target entry: __offload_entry_broken_c_89mic_pushicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 5] [State]           Setup target entry: __offload_entry_broken_c_89mic_pushicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 5] [Signal]          signal : none
 [Offload] [HOST]  [Tag 5] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 5] [State]           Host->target pointer data 400000000
 [Offload] [HOST]  [Tag 5] [State]           Host->target copyin data 0 
 [Offload] [HOST]  [Tag 5] [State]           Target->host pointer data 0
-[Offload] [HOST]  [Tag 5] [CPU Time]        0.071028(seconds)
+[Offload] [HOST]  [Tag 5] [CPU Time]        0.071559(seconds)
 [Offload] [MIC 0] [Tag 5] [CPU->MIC Data]   400000000 (bytes)
 [Offload] [MIC 0] [Tag 5] [MIC Time]        0.000000(seconds)
 [Offload] [MIC 0] [Tag 5] [MIC->CPU Data]   0 (bytes)
@@ -122,24 +122,24 @@ Doing some work on device...
 [Offload] [MIC 0] [Line]                    23
 [Offload] [MIC 0] [Tag]                     Tag 6
 [Offload] [HOST]  [Tag 6] [State]           Start target
-[Offload] [HOST]  [Tag 6] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 6] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 6] [Signal]          signal : none
 [Offload] [HOST]  [Tag 6] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 6] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 6] [State]           Host->target copyin data 4 
 [Offload] [HOST]  [Tag 6] [State]           Execute task on target
 [Offload] [HOST]  [Tag 6] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 6] [State]           Start target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
-[Offload] [HOST]  [Tag 6] [CPU Time]        0.000769(seconds)
+[Offload] [MIC 0] [Tag 6] [State]           Start target entry: __offload_entry_broken_c_23voodooicc0101964010590k8azMm
+[Offload] [HOST]  [Tag 6] [CPU Time]        0.000766(seconds)
 [Offload] [MIC 0] [Tag 6] [CPU->MIC Data]   4 (bytes)
-[Offload] [MIC 0] [Tag 6] [MIC Time]        0.000096(seconds)
+[Offload] [MIC 0] [Tag 6] [MIC Time]        0.000094(seconds)
 [Offload] [MIC 0] [Tag 6] [MIC->CPU Data]   4 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    31
 [Offload] [MIC 0] [Tag]                     Tag 7
 [Offload] [HOST]  [Tag 7] [State]           Start target
-[Offload] [HOST]  [Tag 7] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 7] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 7] [Signal]          signal : none
 [Offload] [HOST]  [Tag 7] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 7] [State]           Host->target pointer data 0
@@ -148,7 +148,7 @@ Doing some work on device...
 [Offload] [HOST]  [Tag 7] [State]           Target->host pointer data 0
 [Offload] [MIC 0] [Tag 6] [Var]             mthreads  INOUT
 [Offload] [MIC 0] [Tag 6] [State]           Target->host copyout data   4
-[Offload] [MIC 0] [Tag 7] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 7] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [MIC 0] [Tag 7] [Var]             a_1041_V$2  IN
 [Offload] [MIC 0] [Tag 7] [Var]             b_1041_V$3  IN
 [Offload] [MIC 0] [Tag 7] [Var]             c_1041_V$4  IN
@@ -156,116 +156,146 @@ Doing some work on device...
 [Offload] [MIC 0] [Tag 7] [Var]             work_spill  IN
 [Offload] [MIC 0] [Tag 7] [Var]             nworkers  INOUT
 [Offload] [MIC 0] [Tag 7] [State]           Target->host copyout data   8
-[Offload] [HOST]  [Tag 7] [CPU Time]        1.823075(seconds)
-[Offload] [MIC 0] [Tag 7] [CPU->MIC Data]   48 (bytes)
-[Offload] [MIC 0] [Tag 7] [MIC Time]        1.814970(seconds)
+IC 0] [Tag 7] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 7] [MIC Time]        1.822624(seconds)
 [Offload] [MIC 0] [Tag 7] [MIC->CPU Data]   8 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    23
 [Offload] [MIC 0] [Tag]                     Tag 8
 [Offload] [HOST]  [Tag 8] [State]           Start target
-[Offload] [HOST]  [Tag 8] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 8] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 8] [Signal]          signal : none
 [Offload] [HOST]  [Tag 8] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 8] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 8] [State]           Host->target copyin data 4 
 [Offload] [HOST]  [Tag 8] [State]           Execute task on target
 [Offload] [HOST]  [Tag 8] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 8] [State]           Start target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
-[Offload] [HOST]  [Tag 8] [CPU Time]        0.000265(seconds)
+[Offload] [HOST]  [Tag 8] [CPU Time]        0.000307(seconds)
 [Offload] [MIC 0] [Tag 8] [CPU->MIC Data]   4 (bytes)
-[Offload] [MIC 0] [Tag 8] [MIC Time]        0.000099(seconds)
+[Offload] [MIC 0] [Tag 8] [MIC Time]        0.000098(seconds)
 [Offload] [MIC 0] [Tag 8] [MIC->CPU Data]   4 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    31
 [Offload] [MIC 0] [Tag]                     Tag 9
 [Offload] [HOST]  [Tag 9] [State]           Start target
-[Offload] [HOST]  [Tag 9] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 9] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 9] [Signal]          signal : none
 [Offload] [HOST]  [Tag 9] [Signal]          waits  : none
-[Offload] [HOST]  [Tag 9] [State]           Host->target pointer data 0
-[Offload] [HOST]  [Tag 9] [State]           Host->target copyin data 48 
+[Offload] [MIC 0] [Tag 8] [State]           Start target entry: __offloa[Offload] [HOST]  [Tag 9] [State]           Host->target copyin data 48 
 [Offload] [HOST]  [Tag 9] [State]           Execute task on target
 [Offload] [HOST]  [Tag 9] [State]           Target->host pointer data 0
 [Offload] [MIC 0] [Tag 8] [Var]             mthreads  INOUT
 [Offload] [MIC 0] [Tag 8] [State]           Target->host copyout data   4
-[Offload] [MIC 0] [Tag 9] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 9] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [MIC 0] [Tag 9] [Var]             a_1041_V$2  IN
 [Offload] [MIC 0] [Tag 9] [Var]             b_1041_V$3  IN
 [Offload] [MIC 0] [Tag 9] [Var]             c_1041_V$4  IN
 [Offload] [MIC 0] [Tag 9] [Var]             work_split  IN
 [Offload] [MIC 0] [Tag 9] [Var]             work_spill  IN
 [Offload] [MIC 0] [Tag 9] [Var]             nworkers  INOUT
-[Offload] [MIC 0] [Tag 9] [State]           Target->host copyout data   8
-[Offload] [HOST]  [Tag 9] [CPU Time]        1.503924(seconds)
+[Offload] [HOST]  [Tag 9] [CPU Time]        1.503688(seconds)
 [Offload] [MIC 0] [Tag 9] [CPU->MIC Data]   48 (bytes)
-[Offload] [MIC 0] [Tag 9] [MIC Time]        1.497207(seconds)
+[Offload] [MIC 0] [Tag 9] [MIC Time]        1.496948(seconds)
 [Offload] [MIC 0] [Tag 9] [MIC->CPU Data]   8 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    23
 [Offload] [MIC 0] [Tag]                     Tag 10
 [Offload] [HOST]  [Tag 10] [State]           Start target
-[Offload] [HOST]  [Tag 10] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 10] [State]           Setup target entry: __offload_entry_broken_c_23voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 10] [Signal]          signal : none
 [Offload] [HOST]  [Tag 10] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 10] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 10] [State]           Host->target copyin data 4 
 [Offload] [HOST]  [Tag 10] [State]           Execute task on target
 [Offload] [HOST]  [Tag 10] [State]           Target->host pointer data 0
-[Offload] [MIC 0] [Tag 10] [State]           Start target entry: __offload_entry_broken_c_23voodooicc0102107354926DnRxsH
-[Offload] [HOST]  [Tag 10] [CPU Time]        0.000294(seconds)
+[Offload] [HOST]  [Tag 10] [CPU Time]        0.000286(seconds)
 [Offload] [MIC 0] [Tag 10] [CPU->MIC Data]   4 (bytes)
-[Offload] [MIC 0] [Tag 10] [MIC Time]        0.000100(seconds)
+[Offload] [MIC 0] [Tag 10] [MIC Time]        0.000098(seconds)
 [Offload] [MIC 0] [Tag 10] [MIC->CPU Data]   4 (bytes)
 
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    31
 [Offload] [MIC 0] [Tag]                     Tag 11
 [Offload] [HOST]  [Tag 11] [State]           Start target
-[Offload] [HOST]  [Tag 11] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [HOST]  [Tag 11] [State]           Setup target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 11] [Signal]          signal : none
 [Offload] [HOST]  [Tag 11] [Signal]          waits  : none
-[Offload] [HOST]  [Tag 11] [State]           Host->target pointer data 0
-[Offload] [HOST]  [Tag 11] [State]           Host->target copyin data 48 
+[Offload] [MIC 0] [Tag 10] [State]           Start target entry: __offloa[Offload] [HOST]  [Tag 11] [State]           Host->target copyin data 48 
 [Offload] [HOST]  [Tag 11] [State]           Execute task on target
 [Offload] [HOST]  [Tag 11] [State]           Target->host pointer data 0
 [Offload] [MIC 0] [Tag 10] [Var]             mthreads  INOUT
 [Offload] [MIC 0] [Tag 10] [State]           Target->host copyout data   4
-[Offload] [MIC 0] [Tag 11] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 11] [State]           Start target entry: __offload_entry_broken_c_31voodooicc0101964010590k8azMm
 [Offload] [MIC 0] [Tag 11] [Var]             a_1041_V$2  IN
 [Offload] [MIC 0] [Tag 11] [Var]             b_1041_V$3  IN
 [Offload] [MIC 0] [Tag 11] [Var]             c_1041_V$4  IN
 [Offload] [MIC 0] [Tag 11] [Var]             work_split  IN
 [Offload] [MIC 0] [Tag 11] [Var]             work_spill  IN
 [Offload] [MIC 0] [Tag 11] [Var]             nworkers  INOUT
-[Offload] [MIC 0] [Tag 11] [State]           Target->host copyout data   8
-[Offload] [HOST]  [Tag 11] [CPU Time]        1.504030(seconds)
+[Offload] [HOST]  [Tag 11] [CPU Time]        1.503654(seconds)
 [Offload] [MIC 0] [Tag 11] [CPU->MIC Data]   48 (bytes)
-[Offload] [MIC 0] [Tag 11] [MIC Time]        1.497303(seconds)
+[Offload] [MIC 0] [Tag 11] [MIC Time]        1.496963(seconds)
 [Offload] [MIC 0] [Tag 11] [MIC->CPU Data]   8 (bytes)
 
-Retrieving and deallocating data device...
+Retrieving data from and deallocating data on device...
 [Offload] [MIC 0] [File]                    broken.c
 [Offload] [MIC 0] [Line]                    113
 [Offload] [MIC 0] [Tag]                     Tag 12
-[Offload] [HOST]  [Tag 12] [State]           Start target
-[Offload] [HOST]  [Tag 12] [State]           Setup target entry: __offload_entry_broken_c_113mic_pull_freeicc0102107354926DnRxsH
+[Offload] [MIC 0] [Tag 11] [State]           Target->host [Offload] [HOST]  [Tag 12] [State]           Setup target entry: __offload_entry_broken_c_113mic_freeicc0101964010590k8azMm
 [Offload] [HOST]  [Tag 12] [Signal]          signal : none
 [Offload] [HOST]  [Tag 12] [Signal]          waits  : none
 [Offload] [HOST]  [Tag 12] [State]           Host->target pointer data 0
 [Offload] [HOST]  [Tag 12] [State]           Host->target copyin data 8 
 [Offload] [HOST]  [Tag 12] [State]           Execute task on target
-[Offload] [HOST]  [Tag 12] [State]           Target->host pointer data 400000000
-[Offload] [MIC 0] [Tag 12] [State]           Start target entry: __offload_entry_broken_c_113mic_pull_freeicc0102107354926DnRxsH
-[Offload] [MIC 0] [Tag 12] [Var]             data_1080_V$25  OUT
+[Offload] [HOST]  [Tag 12] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 12] [State]           Start target entry: __offload_entry_broken_c_113mic_freeicc0101964010590k8azMm
+[Offload] [MIC 0] [Tag 12] [Var]             data_1080_V$25  NOCOPY
 [Offload] [MIC 0] [Tag 12] [State]           Target->host copyout data   0
-[Offload] [HOST]  [Tag 12] [CPU Time]        0.064531(seconds)
+[Offload] [HOST]  [Tag 12] [CPU Time]        0.000791(seconds)
 [Offload] [MIC 0] [Tag 12] [CPU->MIC Data]   8 (bytes)
-[Offload] [MIC 0] [Tag 12] [MIC Time]        0.000183(seconds)
-[Offload] [MIC 0] [Tag 12] [MIC->CPU Data]   400000000 (bytes)
+[Offload] [MIC 0] [Tag 12] [MIC Time]        0.000180(seconds)
+[Offload] [MIC 0] [Tag 12] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    broken.c
+[Offload] [MIC 0] [Line]                    113
+[Offload] [MIC 0] [Tag]                     Tag 13
+[Offload] [HOST]  [Tag 13] [State]           Start target
+[Offload] [HOST]  [Tag 13] [State]           Setup target entry: __offload_entry_broken_c_113mic_freeicc0101964010590k8azMm
+[Offload] [HOST]  [Tag 13] [Signal]          signal : none
+[Offload] [HOST]  [Tag 13] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 13] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 13] [State]           Host->target copyin data 8 
+[Offload] [HOST]  [Tag 13] [State]           Execute task on target
+[Offload] [HOST]  [Tag 13] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 13] [State]           Start target entry: __offload_entry_broken_c_113mic_freeicc0101964010590k8azMm
+[Offload] [MIC 0] [Tag 13] [Var]             data_1080_V$25  NOCOPY
+[Offload] [MIC 0] [Tag 13] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 13] [CPU Time]        0.000712(seconds)
+[Offload] [MIC 0] [Tag 13] [CPU->MIC Data]   8 (bytes)
+[Offload] [MIC 0] [Tag 13] [MIC Time]        0.000122(seconds)
+[Offload] [MIC 0] [Tag 13] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    broken.c
+[Offload] [MIC 0] [Line]                    121
+[Offload] [MIC 0] [Tag]                     Tag 14
+[Offload] [HOST]  [Tag 14] [State]           Start target
+[Offload] [HOST]  [Tag 14] [State]           Setup target entry: __offload_entry_broken_c_121mic_pull_freeicc0101964010590k8azMm
+[Offload] [HOST]  [Tag 14] [Signal]          signal : none
+[Offload] [HOST]  [Tag 14] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 14] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 14] [State]           Host->target copyin data 8 
+[Offload] [HOST]  [Tag 14] [State]           Execute task on target
+[Offload] [HOST]  [Tag 14] [State]           Target->host pointer data 400000000
+[Offload] [MIC 0] [Tag 14] [State]           Start target entry: __offload_entry_broken_c_121mic_pull_freeicc0101964010590k8azMm
+[Offload] [MIC 0] [Tag 14] [Var]             data_1084_V$29  OUT
+[Offload] [MIC 0] [Tag 14] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 14] [CPU Time]        0.063968(seconds)
+[Offload] [MIC 0] [Tag 14] [CPU->MIC Data]   8 (bytes)
+[Offload] [MIC 0] [Tag 14] [MIC Time]        0.000109(seconds)
+[Offload] [MIC 0] [Tag 14] [MIC->CPU Data]   400000000 (bytes)
 
 Bla bla...
 c[nelem/2] = 250000.000000
