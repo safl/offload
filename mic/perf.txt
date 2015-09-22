@@ -1,0 +1,550 @@
+Loading library..
+Loading voodoo..
+[Offload] [HOST]          [State]           Initialize logical card 0 = physical card 0
+[Offload] [HOST]          [State]           Initialize logical card 1 = physical card 1
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    47
+[Offload] [MIC 0] [Tag]                     Tag 0
+[Offload] [HOST]  [Tag 0] [State]           Start target
+[Offload] [HOST]  [Tag 0] [State]           Setup target entry: __offload_entry_libmiclord_c_47mic_get_max_threadsicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 0] [Signal]          signal : none
+[Offload] [HOST]  [Tag 0] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 0] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 0] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 0] [State]           Execute task on target
+[Offload] [HOST]  [Tag 0] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 0] [State]           Start target entry: __offload_entry_libmiclord_c_47mic_get_max_threadsicc010730440348Uqn6lD
+[Offload] [MIC 0] [Tag 0] [Var]             mthreads  OUT
+[Offload] [MIC 0] [Tag 0] [State]           Target->host copyout data   4
+[Offload] [HOST]  [Tag 0] [CPU Time]        1.514027(seconds)
+[Offload] [MIC 0] [Tag 0] [CPU->MIC Data]   0 (bytes)
+[Offload] [MIC 0] [Tag 0] [MIC Time]        0.020873(seconds)
+[Offload] [MIC 0] [Tag 0] [MIC->CPU Data]   4 (bytes)
+
+Started...
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    6
+[Offload] [MIC 0] [Tag]                     Tag 1
+[Offload] [HOST]  [Tag 1] [State]           Start target
+[Offload] [HOST]  [Tag 1] [State]           Setup target entry: __offload_entry_libmiclord_c_6mic_allocicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 1] [Signal]          signal : none
+[Offload] [HOST]  [Tag 1] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 1] [State]           Gather copyin data: base=0x7eff18287000 length=400000000
+[Offload] [HOST]  [Tag 1] [State]           Create target buffer: size=400000000 offset=0
+[Offload] [HOST]  [Tag 1] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 1] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 1] [State]           Execute task on target
+[Offload] [HOST]  [Tag 1] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 1] [State]           Start target entry: __offload_entry_libmiclord_c_6mic_allocicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 1] [CPU Time]        1.290703(seconds)
+[Offload] [MIC 0] [Tag 1] [CPU->MIC Data]   0 (bytes)
+[Offload] [MIC 0] [Tag 1] [MIC Time]        0.000250(seconds)
+[Offload] [MIC 0] [Tag 1] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    6
+[Offload] [MIC 0] [Tag]                     Tag 2
+[Offload] [HOST]  [Tag 2] [State]           Start target
+[Offload] [HOST]  [Tag 2] [State]           Setup target entry: __offload_entry_libmiclord_c_6mic_allocicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 2] [Signal]          signal : none
+[Offload] [HOST]  [Tag 2] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 2] [State]           Gather copyin data: base=0x7eff0050e000 length=400000000
+[Offload] [MIC 0] [Tag 1] [Var]             data_134_V$0  NOCOPY
+[Offload] [MIC 0] [Tag 1] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 2] [State]           Create target buffer: size=400000000 offset=0
+[Offload] [HOST]  [Tag 2] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 2] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 2] [State]           Execute task on target
+[Offload] [HOST]  [Tag 2] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 2] [State]           Start target entry: __offload_entry_libmiclord_c_6mic_allocicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 2] [CPU Time]        1.290842(seconds)
+[Offload] [MIC 0] [Tag 2] [CPU->MIC Data]   0 (bytes)
+[Offload] [MIC 0] [Tag 2] [MIC Time]        0.000120(seconds)
+[Offload] [MIC 0] [Tag 2] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    6
+[Offload] [MIC 0] [Tag]                     Tag 3
+[Offload] [HOST]  [Tag 3] [State]           Start target
+[Offload] [MIC 0] [Tag 2] [Var]             data_134_V$0  NOCOPY
+[Offload] [MIC 0] [Tag 2] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 3] [Signal]          signal : none
+[Offload] [HOST]  [Tag 3] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 3] [State]           Gather copyin data: base=0x7efee8795000 length=400000000
+[Offload] [HOST]  [Tag 3] [State]           Create target buffer: size=400000000 offset=0
+[Offload] [HOST]  [Tag 3] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 3] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 3] [State]           Execute task on target
+[Offload] [HOST]  [Tag 3] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 3] [State]           Start target entry: __offload_entry_libmiclord_c_6mic_allocicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 3] [CPU Time]        1.369826(seconds)
+[Offload] [MIC 0] [Tag 3] [CPU->MIC Data]   0 (bytes)
+[Offload] [MIC 0] [Tag 3] [MIC Time]        0.000106(seconds)
+[Offload] [MIC 0] [Tag 3] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    14
+[Offload] [MIC 0] [Tag]                     Tag 4
+[Offload] [HOST]  [Tag 4] [State]           Start target
+[Offload] [HOST]  [Tag 4] [State]           Setup target entry: __offload_entry_libmiclord_c_14mic_pushicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 4] [Signal]          signal : none
+[Offload] [HOST]  [Tag 4] [Signal]          waits  : none
+[Offload] [MIC 0] [Tag 3] [Var]             data_134_V$0  NOCOPY
+[Offload] [MIC 0] [Tag 3] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 4] [State]           Host->target pointer data 400000000
+[Offload] [HOST]  [Tag 4] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 4] [State]           Target->host pointer data 0
+[Offload] [HOST]  [Tag 4] [CPU Time]        0.058486(seconds)
+[Offload] [MIC 0] [Tag 4] [CPU->MIC Data]   400000000 (bytes)
+[Offload] [MIC 0] [Tag 4] [MIC Time]        0.000000(seconds)
+[Offload] [MIC 0] [Tag 4] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    14
+[Offload] [MIC 0] [Tag]                     Tag 5
+[Offload] [HOST]  [Tag 5] [State]           Start target
+[Offload] [HOST]  [Tag 5] [State]           Setup target entry: __offload_entry_libmiclord_c_14mic_pushicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 5] [Signal]          signal : none
+[Offload] [HOST]  [Tag 5] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 5] [State]           Host->target pointer data 400000000
+[Offload] [HOST]  [Tag 5] [State]           Host->target copyin data 0 
+[Offload] [HOST]  [Tag 5] [State]           Target->host pointer data 0
+[Offload] [HOST]  [Tag 5] [CPU Time]        0.058474(seconds)
+[Offload] [MIC 0] [Tag 5] [CPU->MIC Data]   400000000 (bytes)
+[Offload] [MIC 0] [Tag 5] [MIC Time]        0.000000(seconds)
+[Offload] [MIC 0] [Tag 5] [MIC->CPU Data]   0 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 6
+[Offload] [HOST]  [Tag 6] [State]           Start target
+[Offload] [HOST]  [Tag 6] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 6] [Signal]          signal : none
+[Offload] [HOST]  [Tag 6] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 6] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 6] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 6] [State]           Execute task on target
+[Offload] [HOST]  [Tag 6] [State]           Target->host pointer data 0
+[Offload] [HOST]  [Tag 6] [CPU Time]        0.000360(seconds)
+[Offload] [MIC 0] [Tag 6] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 6] [MIC Time]        0.000111(seconds)
+[Offload] [MIC 0] [Tag 6] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 7
+[Offload] [HOST]  [Tag 7] [State]           Start target
+[Offload] [HOST]  [Tag 7] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 7] [Signal]          signal : none
+[Offload] [HOST]  [Tag 7] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 7] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 7] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 7] [State]           Execute task on target
+[Offload] [HOST]  [Tag 7] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 6] [Var]             mthreads  INOUT
+[Offload] [MIC 0] [Tag 6] [State]           Target->host copyout data   4
+[Offload] [MIC 0] [Tag 7] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 7] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 7] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 7] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 7] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 7] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 7] [Var]             nworkers  INOUT
+[Offload] [HOST]  [Tag 7] [CPU Time]        1.478447(seconds)
+[Offload] [MIC 0] [Tag 7] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 7] [MIC Time]        1.471391(seconds)
+[Offload] [MIC 0] [Tag 7] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 8
+[Offload] [HOST]  [Tag 8] [State]           Start target
+[Offload] [HOST]  [Tag 8] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 8] [Signal]          signal : none
+[Offload] [HOST]  [Tag 8] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 8] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 8] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 8] [State]           Execute task on target
+[Offload] [HOST]  [Tag 8] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 7] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 8] [CPU Time]        0.000260(seconds)
+[Offload] [MIC 0] [Tag 8] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 8] [MIC Time]        0.000114(seconds)
+[Offload] [MIC 0] [Tag 8] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [Tag 8] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 8] [Var]             mthreads  INOUT
+[Offload] [MIC 0] [Tag 8] [State]           Target->host copyout data   4
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 9
+[Offload] [HOST]  [Tag 9] [State]           Start target
+[Offload] [HOST]  [Tag 9] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 9] [Signal]          signal : none
+[Offload] [HOST]  [Tag 9] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 9] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 9] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 9] [State]           Execute task on target
+[Offload] [HOST]  [Tag 9] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 9] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 9] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 9] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 9] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 9] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 9] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 9] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 9] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 9] [CPU Time]        1.147072(seconds)
+[Offload] [MIC 0] [Tag 9] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 9] [MIC Time]        1.141496(seconds)
+[Offload] [MIC 0] [Tag 9] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 10
+[Offload] [HOST]  [Tag 10] [State]           Start target
+[Offload] [HOST]  [Tag 10] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 10] [Signal]          signal : none
+[Offload] [HOST]  [Tag 10] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 10] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 10] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 10] [State]           Execute task on target
+[Offload] [HOST]  [Tag 10] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 10] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 10] [CPU Time]        0.000290(seconds)
+[Offload] [MIC 0] [Tag 10] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 10] [MIC Time]        0.000111(seconds)
+[Offload] [MIC 0] [Tag 10] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 11
+[Offload] [HOST]  [Tag 11] [State]           Start target
+[Offload] [HOST]  [Tag 11] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 11] [Signal]          signal : none
+[Offload] [HOST]  [Tag 11] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 11] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 11] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 11] [State]           Execute task on target
+[Offload] [HOST]  [Tag 11] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 11] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 11] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 11] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 11] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 11] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 11] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 11] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 11] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 11] [CPU Time]        1.143503(seconds)
+[Offload] [MIC 0] [Tag 11] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 11] [MIC Time]        1.137944(seconds)
+[Offload] [MIC 0] [Tag 11] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 12
+[Offload] [HOST]  [Tag 12] [State]           Start target
+[Offload] [HOST]  [Tag 12] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 12] [Signal]          signal : none
+[Offload] [HOST]  [Tag 12] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 12] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 12] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 12] [State]           Execute task on target
+[Offload] [HOST]  [Tag 12] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 12] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 12] [CPU Time]        0.000287(seconds)
+[Offload] [MIC 0] [Tag 12] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 12] [MIC Time]        0.000115(seconds)
+[Offload] [MIC 0] [Tag 12] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 13
+[Offload] [HOST]  [Tag 13] [State]           Start target
+[Offload] [HOST]  [Tag 13] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 13] [Signal]          signal : none
+[Offload] [HOST]  [Tag 13] [Signal]          waits  : none
+[Offload] [MIC 0] [Tag 12] [Var]             mthreads  INOUT
+[Offload] [MIC 0] [Tag 12] [State]           Target->host copyout data   4
+[Offload] [HOST]  [Tag 13] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 13] [State]           Execute task on target
+[Offload] [HOST]  [Tag 13] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 13] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 13] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 13] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 13] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 13] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 13] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 13] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 13] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 13] [CPU Time]        1.147007(seconds)
+[Offload] [MIC 0] [Tag 13] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 13] [MIC Time]        1.141427(seconds)
+[Offload] [MIC 0] [Tag 13] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 14
+[Offload] [HOST]  [Tag 14] [State]           Start target
+[Offload] [HOST]  [Tag 14] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 14] [Signal]          signal : none
+[Offload] [HOST]  [Tag 14] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 14] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 14] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 14] [State]           Execute task on target
+[Offload] [HOST]  [Tag 14] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 14] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 14] [Var]             mthreads  INOUT
+[Offload] [MIC 0] [Tag 14] [State]           Target->host copyout data   4
+[Offload] [HOST]  [Tag 14] [CPU Time]        0.000285(seconds)
+[Offload] [MIC 0] [Tag 14] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 14] [MIC Time]        0.000114(seconds)
+[Offload] [MIC 0] [Tag 14] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 15
+[Offload] [HOST]  [Tag 15] [State]           Start target
+[Offload] [HOST]  [Tag 15] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 15] [Signal]          signal : none
+[Offload] [HOST]  [Tag 15] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 15] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 15] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 15] [State]           Execute task on target
+[Offload] [HOST]  [Tag 15] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 15] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 15] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 15] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 15] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 15] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 15] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 15] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 15] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 15] [CPU Time]        1.149161(seconds)
+[Offload] [MIC 0] [Tag 15] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 15] [MIC Time]        1.143567(seconds)
+[Offload] [MIC 0] [Tag 15] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 16
+[Offload] [HOST]  [Tag 16] [State]           Start target
+[Offload] [HOST]  [Tag 16] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 16] [Signal]          signal : none
+[Offload] [HOST]  [Tag 16] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 16] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 16] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 16] [State]           Execute task on target
+[Offload] [HOST]  [Tag 16] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 16] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 16] [CPU Time]        0.000292(seconds)
+[Offload] [MIC 0] [Tag 16] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 16] [MIC Time]        0.000114(seconds)
+[Offload] [MIC 0] [Tag 16] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 17
+[Offload] [HOST]  [Tag 17] [State]           Start target
+[Offload] [HOST]  [Tag 17] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 17] [Signal]          signal : none
+[Offload] [HOST]  [Tag 17] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 17] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 17] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 17] [State]           Execute task on target
+[Offload] [HOST]  [Tag 17] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 17] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 17] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 17] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 17] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 17] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 17] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 17] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 17] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 17] [CPU Time]        1.146633(seconds)
+[Offload] [MIC 0] [Tag 17] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 17] [MIC Time]        1.141044(seconds)
+[Offload] [MIC 0] [Tag 17] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 18
+[Offload] [HOST]  [Tag 18] [State]           Start target
+[Offload] [HOST]  [Tag 18] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 18] [Signal]          signal : none
+[Offload] [HOST]  [Tag 18] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 18] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 18] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 18] [State]           Execute task on target
+[Offload] [HOST]  [Tag 18] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 18] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 18] [CPU Time]        0.000275(seconds)
+[Offload] [MIC 0] [Tag 18] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 18] [MIC Time]        0.000105(seconds)
+[Offload] [MIC 0] [Tag 18] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 19
+[Offload] [HOST]  [Tag 19] [State]           Start target
+[Offload] [HOST]  [Tag 19] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 19] [Signal]          signal : none
+[Offload] [HOST]  [Tag 19] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 19] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 19] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 19] [State]           Execute task on target
+[Offload] [HOST]  [Tag 19] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 19] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 19] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 19] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 19] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 19] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 19] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 19] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 19] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 19] [CPU Time]        1.146137(seconds)
+[Offload] [MIC 0] [Tag 19] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 19] [MIC Time]        1.140558(seconds)
+[Offload] [MIC 0] [Tag 19] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 20
+[Offload] [HOST]  [Tag 20] [State]           Start target
+[Offload] [HOST]  [Tag 20] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 20] [Signal]          signal : none
+[Offload] [HOST]  [Tag 20] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 20] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 20] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 20] [State]           Execute task on target
+[Offload] [HOST]  [Tag 20] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 20] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 20] [CPU Time]        0.000280(seconds)
+[Offload] [MIC 0] [Tag 20] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 20] [MIC Time]        0.000110(seconds)
+[Offload] [MIC 0] [Tag 20] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 21
+[Offload] [HOST]  [Tag 21] [State]           Start target
+[Offload] [HOST]  [Tag 21] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 21] [Signal]          signal : none
+[Offload] [HOST]  [Tag 21] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 21] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 21] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 21] [State]           Execute task on target
+[Offload] [HOST]  [Tag 21] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 21] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 21] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 21] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 21] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 21] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 21] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 21] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 21] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 21] [CPU Time]        1.143389(seconds)
+[Offload] [MIC 0] [Tag 21] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 21] [MIC Time]        1.137829(seconds)
+[Offload] [MIC 0] [Tag 21] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 22
+[Offload] [HOST]  [Tag 22] [State]           Start target
+[Offload] [HOST]  [Tag 22] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 22] [Signal]          signal : none
+[Offload] [HOST]  [Tag 22] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 22] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 22] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 22] [State]           Execute task on target
+[Offload] [HOST]  [Tag 22] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 22] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 22] [CPU Time]        0.000266(seconds)
+[Offload] [MIC 0] [Tag 22] [CPU->MIC Data]   4 (bytes)
+[Offload] [MIC 0] [Tag 22] [MIC Time]        0.000106(seconds)
+[Offload] [MIC 0] [Tag 22] [MIC->CPU Data]   4 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 23
+[Offload] [HOST]  [Tag 23] [State]           Start target
+[Offload] [HOST]  [Tag 23] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 23] [Signal]          signal : none
+[Offload] [HOST]  [Tag 23] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 23] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 23] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 23] [State]           Execute task on target
+[Offload] [HOST]  [Tag 23] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 23] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 23] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 23] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 23] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 23] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 23] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 23] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 23] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 23] [CPU Time]        1.148536(seconds)
+[Offload] [MIC 0] [Tag 23] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 23] [MIC Time]        1.142938(seconds)
+[Offload] [MIC 0] [Tag 23] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    11
+[Offload] [MIC 0] [Tag]                     Tag 24
+[Offload] [HOST]  [Tag 24] [State]           Start target
+[Offload] [HOST]  [Tag 24] [State]           Setup target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 24] [Signal]          signal : none
+[Offload] [HOST]  [Tag 24] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 24] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 24] [State]           Host->target copyin data 4 
+[Offload] [HOST]  [Tag 24] [State]           Execute task on target
+[Offload] [HOST]  [Tag 24] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 24] [State]           Start target entry: __offload_entry_libvoodoo_c_11voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 24] [Var]             mthreads  INOUT
+[Offload] [MIC 0] [Tag 24] [State]           Target->host copyout data   4
+[Offload] [MIC 0] [File]                    libvoodoo.c
+[Offload] [MIC 0] [Line]                    19
+[Offload] [MIC 0] [Tag]                     Tag 25
+[Offload] [HOST]  [Tag 25] [State]           Start target
+[Offload] [HOST]  [Tag 25] [State]           Setup target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [HOST]  [Tag 25] [Signal]          signal : none
+[Offload] [HOST]  [Tag 25] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 25] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 25] [State]           Host->target copyin data 48 
+[Offload] [HOST]  [Tag 25] [State]           Execute task on target
+[Offload] [HOST]  [Tag 25] [State]           Target->host pointer data 0
+[Offload] [MIC 0] [Tag 25] [State]           Start target entry: __offload_entry_libvoodoo_c_19voodooicc010583105613IOIeoG
+[Offload] [MIC 0] [Tag 25] [Var]             a_744_V$2  IN
+[Offload] [MIC 0] [Tag 25] [Var]             b_744_V$3  IN
+[Offload] [MIC 0] [Tag 25] [Var]             c_744_V$4  IN
+[Offload] [MIC 0] [Tag 25] [Var]             work_split  IN
+[Offload] [MIC 0] [Tag 25] [Var]             work_spill  IN
+[Offload] [MIC 0] [Tag 25] [Var]             nworkers  INOUT
+[Offload] [MIC 0] [Tag 25] [State]           Target->host copyout data   8
+[Offload] [HOST]  [Tag 25] [CPU Time]        1.147472(seconds)
+[Offload] [MIC 0] [Tag 25] [CPU->MIC Data]   48 (bytes)
+[Offload] [MIC 0] [Tag 25] [MIC Time]        1.141901(seconds)
+[Offload] [MIC 0] [Tag 25] [MIC->CPU Data]   8 (bytes)
+
+[Offload] [MIC 0] [File]                    libmiclord.c
+[Offload] [MIC 0] [Line]                    38
+[Offload] [MIC 0] [Tag]                     Tag 26
+[Offload] [HOST]  [Tag 26] [State]           Start target
+[Offload] [HOST]  [Tag 26] [State]           Setup target entry: __offload_entry_libmiclord_c_38mic_pull_freeicc010730440348Uqn6lD
+[Offload] [HOST]  [Tag 26] [Signal]          signal : none
+[Offload] [HOST]  [Tag 26] [Signal]          waits  : none
+[Offload] [HOST]  [Tag 26] [State]           Host->target pointer data 0
+[Offload] [HOST]  [Tag 26] [State]           Host->target copyin data 8 
+[Offload] [HOST]  [Tag 26] [State]           Execute task on target
+[Offload] [HOST]  [Tag 26] [State]           Target->host pointer data 400000000
+[Offload] [MIC 0] [Tag 26] [State]           Start target entry: __offload_entry_libmiclord_c_38mic_pull_freeicc010730440348Uqn6lD
+[Offload] [MIC 0] [Tag 26] [Var]             data_150_V$10  OUT
+[Offload] [MIC 0] [Tag 26] [State]           Target->host copyout data   0
+[Offload] [HOST]  [Tag 26] [CPU Time]        0.058140(seconds)
+[Offload] [MIC 0] [Tag 26] [CPU->MIC Data]   8 (bytes)
+[Offload] [MIC 0] [Tag 26] [MIC Time]        0.000235(seconds)
+[Offload] [MIC 0] [Tag 26] [MIC->CPU Data]   400000000 (bytes)
+
+c[nelem/2] = 250000.000000
+Going down
