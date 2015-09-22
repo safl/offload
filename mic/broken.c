@@ -6,7 +6,6 @@
 #include <inttypes.h>
 #include <dlfcn.h>
 #include <omp.h>
-#include <miclord.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <inttypes.h>
@@ -120,7 +119,7 @@ void mic_pull_free(double* data, size_t nelem, int device, int offload)
 int main (int argc, char **argv)
 {
     int device = 0;                             // The mic deice
-    int iter = 10;
+    int iter = 3;
     int nelem = 50000000;                       // number of elements in the arrays
     int offload = argc > 1 ? atoi(argv[1]) : 1; // Control offloading
 
@@ -140,7 +139,7 @@ int main (int argc, char **argv)
     for(int i=0; i<nelem; ++i) {                // Initialize it
         a[i] = i;
         b[i] = i;
-        //c[i] = i;
+        c[i] = i;
     }
 
     printf("Allocating on device...\n");
@@ -157,7 +156,7 @@ int main (int argc, char **argv)
         voodoo(a, b, c, nelem, device, offload);
     }
     
-    printf("Retrieving and deallocating data device...\n");
+    printf("Retrieving data from and deallocating data on device...\n");
     mic_pull_free(c, nelem, device, offload);   // Copy result back and free on device
 
     printf("Bla bla...\n");
@@ -169,7 +168,7 @@ int main (int argc, char **argv)
     munmap(b, nelem*sizeof(double));
     munmap(c, nelem*sizeof(double));
 
-    printf("Bye!");
+    printf("Bye!\n");
 
     return 0;
 }
