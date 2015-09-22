@@ -11,6 +11,7 @@
 ################################################################################
 
 CC       = pgcc
+#CC	    = pathcc
 OBJ     = o
 EXE	= out
 RUN     =
@@ -22,6 +23,7 @@ endif
 
 CCFLAGS  = -fast
 ACCFLAGS = -Minfo -acc
+#ACCFLAGS = -acc
 
 all: build run verify
 
